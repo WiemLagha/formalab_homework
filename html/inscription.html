@@ -7,7 +7,7 @@
     <body>
         <img src="../images/logo.png" alt="logo" height="50" width="50"> <br/>
         <a href="connexion.html"><button>Inscription</button></a>
-        <a href="home.html"><button>Connexion</button></a> <br/>
+        <a href="home.html"><button>Home</button></a> <br/> <br/>
         <form>
             <label>Nom</label>
             <input type="text" name="Nom"> </br>
@@ -21,18 +21,35 @@
             <label>Homme</label>
             <input type="radio" name="homme"/>
             <label>Autre</label>
-            <input type="radio" name="autre"/>
+            <input type="radio" name="autre"/> </br>
             <label>email</label>
             <input type="text" name="email"> </br>
             <label>date de naissance</label>
             <input type="date" name="date"/></br>
-            
-
+            <label>Nationalité</label>
+            <Select>
+                <option value="options" selected hidden>Options</option>
+                <option value="Tunisienne">Tunisienne</option>
+                <option value="française">Française</option>
+                <option value="americaine">americaine</option>
+                <option value="italienne">Italienne</option>
+                <option value="autre">Autre</option>
+            </Select> </br>
+            <label>Interets</label> </br>
+            <input type="checkbox" value="sport"/>Sport <br/>
+            <input type="checkbox" value="musique"/>Musique <br/>
+            <input type="checkbox" value="lecture"/>Lecture <br/>
+            <input type="checkbox" value="filmes"/>Filmes<br/>
+            <input type="checkbox" value="camping"/>Camping <br/>
+            <input type="checkbox" value="autre"checked/>Autre <br/>
+            <label>Mot de passe </label>
+            <input type="password"> <br/>
+            <label>Confirmer mot de passe </label>
+            <input type="password"> <br/> <br/>
+            <input type="submit" value="envoyer"/>
+            <input type="reset" value="Effacer"/><br/>
 
 
         </form>
-
-
-
     </body>
 </html>
