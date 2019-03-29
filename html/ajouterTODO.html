@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>ajouter TO DO</title>
-    </head>
-    <body>
-        <img src="../images/logo.png" alt="logo" height="50" width="50"> <br/>
-        <a href="connexion.html"><button>Deconnexion</button></a>
-        <a href="home.html"><button>Acceuil</button></a> <br/> <br/>
-        <form>
-            <label>Description</label> <br/>
-            <textarea placeholder="Entrez la description"></textarea> </br>
-            <input type="button" value="Ajouter"/>
-            <input type="reset" value="Effacer"/>
-        </form>
-        
+
+<head>
+    <meta charset="utf-8" />
+    <title>ajouter TO DO</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <img src="../images/google.png" alt="logo" height="100" width="100" class="center thumbnail"> <br />
+    <a href="connexion.html"><button class="btn btn-primary center">Deconnexion</button></a> <br/>
+    <a href="home.html"><button class="btn btn-primary center">Acceuil</button></a> <br />
+    <form>
+        <div class="form-group row">
+            <label for="description" class="col-sm-auto col-form-label">Description</label>
+            <div class="col-sm-auto">
+                <textarea placeholder="Entrez la description" class="form-control-plaintext"
+                    id="description"></textarea> </br>
+            </div>
+        </div>
+
+        <input type="button" value="Ajouter" class="btn btn-primary" /> </br> <br/>
+        <input type="reset" value="Effacer" class="btn btn-primary" />
+    </form>
+</body>
+
+</html>

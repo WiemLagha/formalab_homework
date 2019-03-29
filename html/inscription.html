@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Inscription</title>
-    </head>
-    <body>
-        <img src="../images/logo.png" alt="logo" height="50" width="50"> <br/>
-        <a href="connexion.html"><button>Connexion</button></a>
-        <a href="index.html"><button>Home</button></a> <br/> <br/>
-        <form>
-            <label>Nom</label>
-            <input type="text" name="Nom"> </br>
-            <label>Prenom</label>
-            <input type="text" name="Prenom"> </br>
-            <label>Téléphone</label>
-            <input type="text" name="telephone"> </br>
-            <label>Sexe</label> </br>
-            <label>Femme</label>
-            <input type="radio" name="femme"/>
-            <label>Homme</label>
-            <input type="radio" name="homme"/>
-            <label>Autre</label>
-            <input type="radio" name="autre"/> </br>
-            <label>email</label>
-            <input type="text" name="email"> </br>
-            <label>date de naissance</label>
-            <input type="date" name="date"/></br>
-            <label>Nationalité</label>
-            <Select>
-                <option value="options" selected hidden>Options</option>
-                <option value="Tunisienne">Tunisienne</option>
-                <option value="française">Française</option>
-                <option value="americaine">americaine</option>
-                <option value="italienne">Italienne</option>
-                <option value="autre">Autre</option>
-            </Select> </br>
-            <label>Interets</label> </br>
-            <input type="checkbox" value="sport"/>Sport <br/>
-            <input type="checkbox" value="musique"/>Musique <br/>
-            <input type="checkbox" value="lecture"/>Lecture <br/>
-            <input type="checkbox" value="filmes"/>Filmes<br/>
-            <input type="checkbox" value="camping"/>Camping <br/>
-            <input type="checkbox" value="autre"checked/>Autre <br/>
-            <label>Mot de passe </label>
-            <input type="password"> <br/>
-            <label>Confirmer mot de passe </label>
-            <input type="password"> <br/> <br/>
-            <input type="submit" value="envoyer"/>
-            <input type="reset" value="Effacer"/><br/>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <img src="../images/google.png" alt="logo" height="100" width="100" class="center thumbnail"> <br />
+    <a href="connexion.html"><button class="btn btn-primary center">Connexion</button></a> <br />
+    <a href="index.html"><button class="btn btn-primary center">Home</button></a> <br /> <br />
+    <form>
+        <div class="form-group row">
+            <label for="nom" class="col-sm-auto col-form-label">Nom</label>
+            <div class="col-sm-auto">
+                <input type="text" class="form-control-plaintext" id="nom" placeholder="entrer votre nom">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="prenom" class="col-sm-auto col-form-label">Prénom</label>
+            <div class="col-sm-auto">
+                <input type="text" class="form-control-plaintext" id="prenom" placeholder="entrer votre prénom">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="tel" class="col-sm-auto col-form-label">Téléphone</label>
+            <div class="col-sm-auto">
+                <input type="text" class="form-control-plaintext" id="tel"
+                    placeholder="entrer votre numéro de téléphone">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="sexe" class="col-sm-auto col-form-label">Sexe</label>
+            <div class="col-sm-auto">
+                Femme
+                <input type="radio" name="sexe" />
+                Homme
+                <input type="radio" name="sexe" />
+                Autre
+                <input type="radio" name="sexe" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-auto col-form-label">Email</label>
+            <div class="col-sm-auto">
+                <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="entrer votre email">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="date" class="col-sm-auto col-form-label">Date de naissance</label>
+            <div class="col-sm-auto">
+                <input type="date" class="form-control" name="date" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="nationalite" class="col-sm-auto col-form-label">Nationalité</label>
+            <div class="col-sm-auto">
+                <Select class="form-control">
+                    <option value="options" selected hidden id="nationalite">Options</option>
+                    <option value="Tunisienne" id="nationalite">Tunisienne</option>
+                    <option value="française" id="nationalite">Française</option>
+                    <option value="americaine" id="nationalite">americaine</option>
+                    <option value="italienne" id="nationalite">Italienne</option>
+                    <option value="autre" id="nationalite">Autre</option>
+                </Select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="interet" class="col-sm-auto col-form-label">Centres d'interets</label>
+            <div class="col-sm-auto">
+                <input type="checkbox" value="sport" id="interet" />Sport <br />
+                <input type="checkbox" value="musique" id="interet" />Musique <br />
+                <input type="checkbox" value="lecture" id="interet" />Lecture <br />
+                <input type="checkbox" value="filmes" id="interet" />Filmes<br />
+                <input type="checkbox" value="camping" id="interet" />Camping <br />
+                <input type="checkbox" value="autre" checked id="interet" />Autre
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-auto col-form-label">Password</label>
+            <div class="col-sm-auto">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="confirmPassword" class="col-sm-auto col-form-label">Confirmer votre mot de passe</label>
+            <div class="col-sm-auto">
+                <input type="password" class="form-control" id="ConfirmPassword"
+                    placeholder="Confirmer votre mot de passe">
+            </div>
+        </div>
+
+        <input type="submit" value="envoyer" class="btn btn-primary center" /> <br />
+        <input type="reset" value="Effacer" class="btn btn-primary center" />
 
 
-        </form>
-    </body>
+    </form>
+</body>
+
 </html>

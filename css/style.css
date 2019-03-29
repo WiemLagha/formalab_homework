@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Pacifico');
+body{
+    background-image: url(../images/blur.jpg);
+    background-size: 100%;
+ }
+ .googleF{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+ }
+ .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*p{
+      text-align: center;
+  }*/
+  label{
+      font-weight: bold;
+  }
+  #todo{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: rgb(28, 152, 224);
+    border: 5px solid rgba(77, 1, 77, 0.466);
+    display: block;
+    text-align: center;
+      
+
+  }
+  h2{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Pacifico', cursive;
+    color: rgb(28, 152, 224);
+  }
+.title{
+      color: rgb(22, 1, 41);
+    font-family: 'Dosis', sans-serif;
+  }
+
+  h4{
+      color: darkslateblue;
+  }
