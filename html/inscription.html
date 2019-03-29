@@ -12,23 +12,23 @@
     <img src="../images/google.png" alt="logo" height="100" width="100" class="center thumbnail"> <br />
     <a href="connexion.html"><button class="btn btn-primary center">Connexion</button></a> <br />
     <a href="index.html"><button class="btn btn-primary center">Home</button></a> <br /> <br />
-    <form>
+    <form method="GET" action="../php/inscription.php">
         <div class="form-group row">
             <label for="nom" class="col-sm-auto col-form-label">Nom</label>
             <div class="col-sm-auto">
-                <input type="text" class="form-control-plaintext" id="nom" placeholder="entrer votre nom">
+                <input type="text" class="form-control-plaintext" id="nom"name="nom" placeholder="entrer votre nom">
             </div>
         </div>
         <div class="form-group row">
             <label for="prenom" class="col-sm-auto col-form-label">Prénom</label>
             <div class="col-sm-auto">
-                <input type="text" class="form-control-plaintext" id="prenom" placeholder="entrer votre prénom">
+                <input type="text" class="form-control-plaintext" id="prenom" name="prenom" placeholder="entrer votre prénom">
             </div>
         </div>
         <div class="form-group row">
             <label for="tel" class="col-sm-auto col-form-label">Téléphone</label>
             <div class="col-sm-auto">
-                <input type="text" class="form-control-plaintext" id="tel"
+                <input type="text" class="form-control-plaintext" id="tel" name="tel"
                     placeholder="entrer votre numéro de téléphone">
             </div>
         </div>
@@ -47,7 +47,7 @@
         <div class="form-group row">
             <label for="staticEmail" class="col-sm-auto col-form-label">Email</label>
             <div class="col-sm-auto">
-                <input type="text" class="form-control-plaintext" id="staticEmail" placeholder="entrer votre email">
+                <input type="text" name="email" class="form-control-plaintext" id="staticEmail" placeholder="entrer votre email">
             </div>
         </div>
 
@@ -60,8 +60,8 @@
         <div class="form-group row">
             <label for="nationalite" class="col-sm-auto col-form-label">Nationalité</label>
             <div class="col-sm-auto">
-                <Select class="form-control">
-                    <option value="options" selected hidden id="nationalite">Options</option>
+                <Select class="form-control" name="nat">
+                    <option value="options" selected hidden id="nationalite" >Options</option>
                     <option value="Tunisienne" id="nationalite">Tunisienne</option>
                     <option value="française" id="nationalite">Française</option>
                     <option value="americaine" id="nationalite">americaine</option>
@@ -74,16 +74,16 @@
         <div class="form-group row">
             <label for="interet" class="col-sm-auto col-form-label">Centres d'interets</label>
             <div class="col-sm-auto">
-                <input type="checkbox" value="sport" id="interet" />Sport <br />
-                <input type="checkbox" value="musique" id="interet" />Musique <br />
-                <input type="checkbox" value="lecture" id="interet" />Lecture <br />
-                <input type="checkbox" value="filmes" id="interet" />Filmes<br />
-                <input type="checkbox" value="camping" id="interet" />Camping <br />
-                <input type="checkbox" value="autre" checked id="interet" />Autre
+                <input type="checkbox" value="sport" id="interet" name="interet"/>Sport <br />
+                <input type="checkbox" value="musique" id="interet" name="interet" />Musique <br />
+                <input type="checkbox" value="lecture" id="interet" name="interet" />Lecture <br />
+                <input type="checkbox" value="filmes" id="interet" name="interet"/>Filmes<br />
+                <input type="checkbox" value="camping" id="interet" name="interet"/>Camping <br />
+                <input type="checkbox" value="autre" checked id="interet" name="interet"/>Autre
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword" class="col-sm-auto col-form-label">Password</label>
+            <label for="inputPassword" class="col-sm-auto col-form-label" name="password" > Password</label>
             <div class="col-sm-auto">
                 <input type="password" class="form-control" id="inputPassword" placeholder="Password">
             </div>
@@ -92,7 +92,7 @@
             <label for="confirmPassword" class="col-sm-auto col-form-label">Confirmer votre mot de passe</label>
             <div class="col-sm-auto">
                 <input type="password" class="form-control" id="ConfirmPassword"
-                    placeholder="Confirmer votre mot de passe">
+                    placeholder="Confirmer votre mot de passe" name="passwordC" >
             </div>
         </div>
 
